@@ -35,3 +35,8 @@ out/
 
 ### VS Code ###
 .vscode/
+
+
+### by lhs ###
+application-external.properties
+logs/

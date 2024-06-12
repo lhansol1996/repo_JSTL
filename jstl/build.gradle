@@ -26,6 +26,22 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	
+	//스프링부트 시큐리티 3.2.3
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '3.2.3'
+	
+	// https://mvnrepository.com/artifact/javax.servlet/jstl
+	implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+
+	implementation "org.apache.tomcat.embed:tomcat-embed-jasper"
+
+	// Servlet API
+    providedCompile 'javax.servlet:javax.servlet-api:4.0.1'
+
+    // JSP API
+    providedCompile 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.3'
+
 }
 
 tasks.named('test') {
